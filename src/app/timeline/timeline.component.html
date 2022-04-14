@@ -1,0 +1,29 @@
+<app-timeline-block></app-timeline-block>
+<button>Add new entry</button>
+<form [formGroup]="timelineForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="date">
+      Date
+    </label>
+    <input id="event" type="text" formControlName="date">
+  </div>
+  <button (click)="addEvent()" type="button">+ Add another Event</button>
+  <ng-container formArrayName="events">
+    <div *ngFor="let event of events.controls; let i=index">
+      <!-- The repeated alias template -->
+      <label for="event-{{ i }}">Event: {{i}}</label>
+      <div [formGroupName]="i">
+          <input type="text" formControlName="type">
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- <div>
+        <label for="event">
+          Event
+        </label>
+        <input id="event" type="text" formControlName="event">
+      </div> -->
+
+  <button class="button" type="submit">Confirm</button>
+</form>

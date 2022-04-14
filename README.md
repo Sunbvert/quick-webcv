@@ -1,6 +1,20 @@
-# Myportfolio
+# Quick WebCV
+This is a brand new project for building my own WebCV website.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+**It is very simple.**
+## Features to add:
++ A main page to display your photo, name, description, and timeline.
++ Timeline made from a list of stages.
++ A stage includes a start date and a series of events.
++ event can be Work/Study/Project/Other experiences.
++ You can edit events freely.
++ You can create new pages to add details for your event with Markdown and pictures.
++ A beautiful representation of a website as well as a pdf to download.
+
+Once finished, anyone can use this to build their own website.
+
+
+**This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.**
 
 ## Development server
 
