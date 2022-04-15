@@ -1,0 +1,13 @@
+.stage-dates {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-ctrls {
+  display: table-cell;
+  width: 490px;
+}
+
+.event-ctrls .mat-button-base {
+  margin: 8px 8px 8px 0;
+}

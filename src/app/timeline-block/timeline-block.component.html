@@ -1,3 +1,7 @@
-<div class="col">2015</div>
-<div class="col">Born in China</div>
+<div class="col">{{ stage.dateString }}</div>
+<div class="col">
+    <div *ngFor="let event of stage.events">
+        <h6>{{ event.title }}</h6>
+    </div>
+</div>
 

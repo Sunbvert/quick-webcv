@@ -1,4 +1,5 @@
-import { Component, Host, OnInit } from '@angular/core';
+import { Component, Host, Input, OnInit } from '@angular/core';
+import { Stage } from '../interfaces';
 
 @Component({
   selector: 'app-timeline-block',
@@ -8,6 +9,7 @@ import { Component, Host, OnInit } from '@angular/core';
 })
 export class TimelineBlockComponent implements OnInit {
 
+  @Input() stage: Stage = {} as Stage
   constructor() { }
 
   ngOnInit(): void {

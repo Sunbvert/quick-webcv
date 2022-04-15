@@ -9,6 +9,8 @@ This is a brand new project for building my own WebCV website.
 + event can be Work/Study/Project/Other experiences.
 + You can edit events freely.
 + You can create new pages to add details for your event with Markdown and pictures.
++ You can add display you events by catagory. Different catagory will have distinct labels.
++ You can highlight part of your sentence.
 + A beautiful representation of a website as well as a pdf to download.
 
 Once finished, anyone can use this to build their own website.
