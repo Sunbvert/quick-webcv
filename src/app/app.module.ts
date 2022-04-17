@@ -8,6 +8,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineBlockComponent } from './timeline-block/timeline-block.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MaterialModule } from './material.module';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

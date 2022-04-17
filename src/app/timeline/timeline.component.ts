@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Stage } from '../interfaces';
+import { ColorPalette, CV, EventType, Stage } from '../interfaces';
+import { TimelineService } from '../timeline.service';
 
 @Component({
   selector: 'app-timeline',
@@ -19,20 +20,26 @@ export class TimelineComponent implements OnInit {
 
   openTimelineEdit = false;
 
-  eventTypeOptions = [
-    { name: "Study", color: "primary" },
-    { name: "Work", color: "primary" },
-    { name: "Project", color: "primary" },
-    { name: "Personal", color: "primary" },
-    { name: "Experience", color: "primary" }
-  ];
+  eventTypeOptions: Array<EventType> = [];
+
+  eventTypeColorPalette = {} as ColorPalette;
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private timelineService: TimelineService
   ) { }
 
   get events() {
     return this.timelineForm.get("events") as FormArray;
+  }
+
+  showTimeline() {
+    this.timelineService.getCV()
+      .subscribe((data: CV) => {
+        this.timelineStages = data.timeline.stages;
+        this.eventTypeOptions = data.timeline.eventTypes;
+        data.timeline.eventTypes.forEach(ele => this.eventTypeColorPalette[ele.name] = ele.color);
+     });
   }
 
   addEvent() {
@@ -46,6 +53,7 @@ export class TimelineComponent implements OnInit {
 
   ngOnInit(): void {
     this.addEvent();
+    this.showTimeline();
   }
 
   onOpenNewStageEntryEdit(): void {

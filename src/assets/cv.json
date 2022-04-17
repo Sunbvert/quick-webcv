@@ -1,0 +1,115 @@
+{
+    "name:": "Sun Chuan",
+    "selfDescription": "self Description",
+    "timeline": {
+        "eventTypes": [
+            { "name": "Study", "color": "#3F612D" },
+            { "name": "Work", "color": "#266DD3" },
+            { "name": "Project", "color": "#BA3F1D" },
+            { "name": "Personal", "color": "#5D576B" },
+            { "name": "Experience", "color": "#4F1271" }
+        ],
+        "stages": [
+            {
+                "date": "1996",
+                "events": [
+                    {
+                        "title": "Born in Baotou China",
+                        "type": "Personal",
+                        "detail": "Lived in a small beatiful villege for seven years."
+                    }
+                ]
+            },
+            {
+                "date": "2004 – 2015",
+                "events": [
+                    {
+                        "title": "Moved to the City Baotou for better education",
+                        "type": "Personal",
+                        "detail": "I was almost always at top 5 of my class. Played a lot of video games."
+                    }
+                ]
+            },
+            {
+                "date": "2015 – 2020",
+                "events": [
+                    {
+                        "title": "Study at University of Dalian Jiaotong University in China",
+                        "type": "Study",
+                        "detail": "Because of my strong interest in Programming and English language, I Majored in Software Engineering and English"
+                    },
+                    {
+                        "title": "Learned C# by myself and made a small game with MonoGame & C#",
+                        "type": "Project",
+                        "detail": ""
+                    },
+                    {
+                        "title": "Developed a Java Application for managing books. JDBC and Derby, Java GUI",
+                        "type": "Project",
+                        "detail": ""
+                    },
+                    {
+                        "title": "Developed an Android Application for Visualizing World human age expectancy.",
+                        "type": "Project",
+                        "detail": ""
+                    },
+                    {
+                        "title": "Studied and Developed a Music management website using Vue.js and express.js without any pier Web development knowledge in one week.",
+                        "type": "Project",
+                        "detail": ""
+                    },
+                    {
+                        "title": "Developed a small software for recommending cars using Python and data provided by some company.",
+                        "type": "Project",
+                        "detail": ""
+                    },
+                    {
+                        "title": "Developed a mobile game using JavaScript language and Cocos2D game engine.",
+                        "type": "Project",
+                        "detail": ""
+                    },
+                    {
+                        "title": "For the bachelor thesis, I did a C++ and python",
+                        "type": "Project",
+                        "detail": ""
+                    }
+                ]
+            },
+            {
+                "date": "2020 – 2022",
+                "events": [
+                    {
+                        "title": "Study at BME",
+                        "type": "Study",
+                        "detail": "First year taking online courses because of covid."
+                    },
+                    {
+                        "title": "Developed an Inventory and Delivery System of Baotou Xinweilai lte. A small local business company using vue.js and express.js and mongodb.",
+                        "type": "Project",
+                        "detail": "First year taking online courses because of covid."
+                    },
+                    {
+                        "title": "Developed an order management system for dongjieqiangchang. A logistic company.",
+                        "type": "Project",
+                        "detail": "First year taking online courses because of covid."
+                    },
+                    {
+                        "title": "Morning App",
+                        "type": "Project",
+                        "detail": "or the school assignment. I did project on SOAP, Angular, Speech technology, Django, gesture control. Web ar."
+                    }
+                ]
+            },
+            {
+                "date": "2004 – 2015",
+                "events": [
+                    {
+                        "title": "Where I digged into software testing and business intelligence and AI.",
+                        "type": "Personal",
+                        "detail": "I never run out of ideas of making new software."
+                    }
+                ]
+            }
+        ]
+    }
+}

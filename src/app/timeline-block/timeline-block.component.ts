@@ -1,5 +1,5 @@
-import { Component, Host, Input, OnInit } from '@angular/core';
-import { Stage } from '../interfaces';
+import { Component, Input, OnInit } from '@angular/core';
+import { ColorPalette, Stage } from '../interfaces';
 
 @Component({
   selector: 'app-timeline-block',
@@ -10,6 +10,7 @@ import { Stage } from '../interfaces';
 export class TimelineBlockComponent implements OnInit {
 
   @Input() stage: Stage = {} as Stage
+  @Input() eventColorPalette: ColorPalette = {}
   constructor() { }
 
   ngOnInit(): void {
