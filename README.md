@@ -1,5 +1,5 @@
 # Quick WebCV
-This is a brand new project for building my own WebCV website.
+This is a brand new project for building my own CV website.
 
 **It is very simple.**
 ## Features to add:

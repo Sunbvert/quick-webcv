@@ -1,18 +1,24 @@
 <div class="row">
   <div class="col-2"></div>
   <div class="col">
-    <mat-chip-list aria-label="event type selection">
-      <mat-chip *ngFor="let eventType of eventTypeOptions" 
-        [ngStyle]="{ 'background-color': eventType.color }">
-          {{ eventType.name }}
+    <mat-chip-list aria-label="event type selection" multiple>
+      <mat-chip 
+          *ngFor="let eventType of eventTypeOptions"
+          [style.background-color]="selectedEventTypes.has(eventType.name) ? eventType.color : null"
+          (click)="toggleSelection(eventType.name)"
+          #c="matChip"
+          [value]="eventType.name">
+        {{ eventType.name }}
       </mat-chip>
     </mat-chip-list>
   </div>
 </div>
 <div style="padding: 10px;"></div>
-<app-timeline-block *ngFor="let stage of timelineStages;" 
-  [stage]="stage"
-  [eventColorPalette]="eventTypeColorPalette">
+<app-timeline-block 
+  *ngFor="let stage of timelineStages;" 
+  [stage]="stage" 
+  [eventColorPalette]="eventTypeColorPalette"
+  [selectedEventTypes]="selectedEventTypes">
 </app-timeline-block>
 <!-- <button mat-raised-button color="primary" *ngIf="!openTimelineEdit" (click)="onOpenNewStageEntryEdit()">+Stage</button> -->
 <form *ngIf="openTimelineEdit" [formGroup]="timelineForm" (ngSubmit)="onSubmit()">

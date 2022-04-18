@@ -1,12 +1,14 @@
-<div class="col-2 stage-date">
-  <strong>{{ stage.date }}</strong>
+<div class="col-2 stage-date" *ngIf="stage.events.some(eventSelected)" [@inOutAnimation]>
+  <strong style="border: 1ch;">{{ stage.date }}</strong>
 </div>
 <div class="col outer">
   <div *ngFor="let event of stage.events">
-    <strong>{{ event.title }}</strong>
-    <div class="label-main">
-      <label class="label" [ngStyle]="{ 'background-color': eventColorPalette[event.type] }">{{ event.type }}</label>
+    <div *ngIf="selectedEventTypes.has(event.type)" [@inOutAnimation]>
+      <strong [innerHTML]="sanitizer.bypassSecurityTrustHtml(event.title)">{{ event.title }}</strong>
+      <div class="label-main">
+        <label class="label" [ngStyle]="{ 'background-color': eventColorPalette[event.type] }">{{ event.type }}</label>
+      </div>
+      <p *ngIf="event.detail" [innerHTML]="sanitizer.bypassSecurityTrustHtml(event.detail)"></p>
     </div>
-    <p>{{ event.detail }}</p>
   </div>
 </div>

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, Validators } from '@angular/forms';
 import { ColorPalette, CV, EventType, Stage } from '../interfaces';
 import { TimelineService } from '../timeline.service';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css'],
+  styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent implements OnInit {
 
@@ -24,6 +24,8 @@ export class TimelineComponent implements OnInit {
 
   eventTypeColorPalette = {} as ColorPalette;
 
+  selectedEventTypes: Set<string> = new Set();
+
   constructor(
     private formBuilder: FormBuilder,
     private timelineService: TimelineService
@@ -38,8 +40,26 @@ export class TimelineComponent implements OnInit {
       .subscribe((data: CV) => {
         this.timelineStages = data.timeline.stages;
         this.eventTypeOptions = data.timeline.eventTypes;
-        data.timeline.eventTypes.forEach(ele => this.eventTypeColorPalette[ele.name] = ele.color);
+        data.timeline.eventTypes.forEach(ele => {
+          this.eventTypeColorPalette[ele.name] = ele.color;
+          if (ele.enable) {
+            this.selectedEventTypes.add(ele.name);
+          }
+        });
+        this.parseHightlingh();
      });
+  }
+
+  parseHightlingh() {
+    this.timelineStages.forEach(stage => {
+      stage.events.forEach(event => {
+        let html = `<span style="color: white; background-color: ${this.eventTypeColorPalette[event.type]};">`
+        event.title = event.title.replace('[', html);
+        event.detail = event.detail?.replace('[', html);
+        event.title = event.title.replace(']', '</span>');
+        event.detail = event.detail?.replace(']', '</span>');
+      })
+    })
   }
 
   addEvent() {
@@ -55,6 +75,12 @@ export class TimelineComponent implements OnInit {
     this.addEvent();
     this.showTimeline();
   }
+
+  toggleSelection(chip: string) {
+    const addChip = () => { this.selectedEventTypes.add(chip); };
+    const removeChip = () => { this.selectedEventTypes.delete(chip); };
+    this.selectedEventTypes.has(chip) ? removeChip() : addChip();
+ }
 
   onOpenNewStageEntryEdit(): void {
     this.openTimelineEdit = true;

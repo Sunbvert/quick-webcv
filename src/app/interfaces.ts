@@ -16,7 +16,8 @@ export interface Timeline {
 
 export interface EventType {
   name: string,
-  color: string
+  color: string,
+  enable: boolean
 }
 
 export interface CV {

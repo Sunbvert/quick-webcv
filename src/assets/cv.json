@@ -3,11 +3,11 @@
     "selfDescription": "self Description",
     "timeline": {
         "eventTypes": [
-            { "name": "Study", "color": "#3F612D" },
-            { "name": "Work", "color": "#266DD3" },
-            { "name": "Project", "color": "#BA3F1D" },
-            { "name": "Personal", "color": "#5D576B" },
-            { "name": "Experience", "color": "#4F1271" }
+            { "name": "Education", "color": "#3F612D", "enable": true },
+            { "name": "Work", "color": "#266DD3", "enable": true },
+            { "name": "Project", "color": "#BA3F1D", "enable": true },
+            { "name": "Personal", "color": "#5D576B", "enable": false },
+            { "name": "Experience", "color": "#4F1271", "enable": true }
         ],
         "stages": [
             {
@@ -16,7 +16,7 @@
                     {
                         "title": "Born in Baotou China",
                         "type": "Personal",
-                        "detail": "Lived in a small beatiful villege for seven years."
+                        "detail": "Lived in a small [beatiful villege] for seven years."
                     }
                 ]
             },
@@ -24,7 +24,7 @@
                 "date": "2004 – 2015",
                 "events": [
                     {
-                        "title": "Moved to the City Baotou for better education",
+                        "title": "Moved to the City [Baotou] for better education",
                         "type": "Personal",
                         "detail": "I was almost always at top 5 of my class. Played a lot of video games."
                     }
@@ -34,8 +34,8 @@
                 "date": "2015 – 2020",
                 "events": [
                     {
-                        "title": "Study at University of Dalian Jiaotong University in China",
-                        "type": "Study",
+                        "title": "Education at [University of Dalian Jiaotong University] in China",
+                        "type": "Education",
                         "detail": "Because of my strong interest in Programming and English language, I Majored in Software Engineering and English"
                     },
                     {
@@ -44,12 +44,12 @@
                         "detail": ""
                     },
                     {
-                        "title": "Developed a Java Application for managing books. JDBC and Derby, Java GUI",
+                        "title": "Developed a Java Application for managing books. [JDBC] and Derby, Java GUI",
                         "type": "Project",
                         "detail": ""
                     },
                     {
-                        "title": "Developed an Android Application for Visualizing World human age expectancy.",
+                        "title": "Developed an [Android Application] for Visualizing World human age expectancy.",
                         "type": "Project",
                         "detail": ""
                     },
@@ -79,8 +79,8 @@
                 "date": "2020 – 2022",
                 "events": [
                     {
-                        "title": "Study at BME",
-                        "type": "Study",
+                        "title": "BME",
+                        "type": "Education",
                         "detail": "First year taking online courses because of covid."
                     },
                     {
