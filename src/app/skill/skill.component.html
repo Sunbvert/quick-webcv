@@ -1,0 +1,17 @@
+<h1>Skills</h1>
+<table>
+    <thead>
+        <tr>
+            <td></td>
+            <td *ngFor="let skillLevel of skillLevels">{{ skillLevel }}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let skill of skills">
+            <td>{{ skill.name }}</td>
+            <td *ngFor="let sl of skillLevels; let i = index">
+                <div [style.background-color]="i < skill.level ? 'black' : null"> </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

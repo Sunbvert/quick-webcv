@@ -1,13 +1,20 @@
+export interface Skill {
+  name: string,
+  level: number
+}
+
 export interface Event {
-    type: "Study" | "Work" | "Project" | "Personal" | "Experience",
-    title: string,
-    detail?: string
-  }
-  
+  type: string,
+  title: string,
+  detail?: string,
+  page?: string
+}
+
 export interface Stage {
-    date: Date,
-    events: [Event]
-  }
+  date: string,
+  location: string,
+  events: [Event]
+}
 
 export interface Timeline {
   eventTypes: [EventType],
@@ -22,6 +29,10 @@ export interface EventType {
 
 export interface CV {
   name: string,
+  jobTitle: string,
+  statement: string,
+  skills: [Skill],
+  skillLevels: [string],
   timeline: Timeline
 }
 

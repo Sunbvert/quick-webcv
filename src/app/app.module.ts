@@ -8,13 +8,20 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineBlockComponent } from './timeline-block/timeline-block.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
+import { BlogComponent } from './blog/blog.component';
+import { CvComponent } from './cv/cv.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimelineComponent,
-    TimelineBlockComponent
+    TimelineBlockComponent,
+    BlogComponent,
+    CvComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 <div class="col-2 stage-date" *ngIf="stage.events.some(eventSelected)" [@inOutAnimation]>
   <strong style="border: 1ch;">{{ stage.date }}</strong>
+  <p *ngIf="stage.location">{{ stage.location }}</p>
 </div>
 <div class="col outer">
   <div *ngFor="let event of stage.events">
@@ -9,6 +10,11 @@
         <label class="label" [ngStyle]="{ 'background-color': eventColorPalette[event.type] }">{{ event.type }}</label>
       </div>
       <p *ngIf="event.detail" [innerHTML]="sanitizer.bypassSecurityTrustHtml(event.detail)"></p>
+      <a *ngIf="event.page"
+        title="detail"
+        [routerLink]="['', event.page]">
+        {{ event.page }}
+      </a>
     </div>
   </div>
 </div>

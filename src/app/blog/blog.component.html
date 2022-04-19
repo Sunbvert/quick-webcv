@@ -1,0 +1,11 @@
+<div class="main-container">
+  <a [routerLink]="['']">
+    go back to cv
+  </a>
+  <h1 *ngIf="errMsg">{{ errMsg }}</h1>
+  <markdown 
+    *ngIf="mdSrc" 
+    [src]="mdSrc"
+    (error)="onError($event)">
+  </markdown>
+</div>
