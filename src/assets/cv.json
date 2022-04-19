@@ -2,6 +2,13 @@
     "name": "Sun Chuan",
     "jobTitle": "Graduate Student",
     "statement": "I have always believed that nothing is impossible. I have a strong learning ability, even if I encounter unknown problems or enter unknown areas. I can quickly build up my understanding of a new technology and make use of my knowledge flexibly. I love and enjoy the process of learning, creating, and problem-solving because once a problem is solved, its a huge motivation for me.",
+    "contactInfos": [
+        {
+            "method": "Email",
+            "value": "sunchuanop@outlook.com",
+            "link": "mailto:sunchuanop@outlook.com"
+        }
+    ],
     "skillLevels": ["Being Developed", "Basic", "Intermediate", "Advanced", "Expert"],
     "skills": [
         {
@@ -9,7 +16,7 @@
             "level": 1
         }
     ],
-    "language": [
+    "languages": [
         {
             "name": "English",
             "level": "IELTS band 7"
@@ -17,11 +24,11 @@
     ],
     "timeline": {
         "eventTypes": [
-            { "name": "Education", "color": "#3F612D", "enable": true },
-            { "name": "Work", "color": "#266DD3", "enable": true },
-            { "name": "Project", "color": "#BA3F1D", "enable": false },
-            { "name": "Personal", "color": "#5D576B", "enable": false },
-            { "name": "Experience", "color": "#4F1271", "enable": true }
+            { "name": "Education", "color": "#673ab7", "enable": true },
+            { "name": "Work", "color": "#673ab7", "enable": true },
+            { "name": "Project", "color": "#673ab7", "enable": false },
+            { "name": "Personal", "color": "#673ab7", "enable": false },
+            { "name": "Experience", "color": "#673ab7", "enable": true }
         ],
         "stages": [
             {
@@ -126,6 +133,34 @@
                         "detail": "I never run out of ideas of making new software."
                     }
                 ]
+            }
+        ]
+    },
+    "portfolio": {
+        "name": "Projects",
+        "enable": true,
+        "projects": [
+            {
+                "title": "Morning App",
+                "description": "1111111111",
+                "image": "assets/images/project/mini/flutter.jpg",
+                "page": "morningapp"
+            },
+            {
+                "title": "Morning App",
+                "description": ""
+            },
+            {
+                "title": "Morning App",
+                "description": ""
+            },
+            {
+                "title": "Morning App",
+                "description": ""
+            },
+            {
+                "title": "Morning App",
+                "description": ""
             }
         ]
     }

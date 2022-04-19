@@ -3,6 +3,17 @@ export interface Skill {
   level: number
 }
 
+export interface ContactInfo {
+  method: string,
+  value: string,
+  link?: string
+}
+
+export interface Language {
+  name: string,
+  level: string
+}
+
 export interface Event {
   type: string,
   title: string,
@@ -27,13 +38,29 @@ export interface EventType {
   enable: boolean
 }
 
+export interface Portfolio {
+  name: string,
+  enable: boolean,
+  projects: [Project]
+}
+
+export interface Project {
+  title: string,
+  description?: string,
+  image?: string,
+  page?: string
+}
+
 export interface CV {
   name: string,
   jobTitle: string,
   statement: string,
+  languages: [Language],
+  contactInfos: [ContactInfo],
   skills: [Skill],
   skillLevels: [string],
-  timeline: Timeline
+  timeline: Timeline,
+  portfolio: Portfolio
 }
 
 export interface ColorPalette {

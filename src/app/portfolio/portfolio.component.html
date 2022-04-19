@@ -1,0 +1,28 @@
+<ng-container *ngIf="portfolio && portfolio.enable">
+  <div class="header" style="margin-top: 50px;">{{ portfolio.name }}</div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-6 col-xl-4" *ngFor="let project of projects" style="margin-bottom: 24px;">
+      <!-- <div class="card" style="border-radius: 0;">
+        <div class="card-body">
+          This is some text within a card body.
+        </div>
+      </div> -->
+      <mat-card
+          class="project-card"
+          (mouseover)="project.hovering=true"
+          (mouseout)="project.hovering=false"
+          [routerLink]="project.page ? project.page : null"
+          [class.mat-elevation-z2]="!project.hovering"
+          [class.mat-elevation-z12]="project.hovering"
+          >
+        <mat-card-title-group>
+          <mat-card-title>{{ project.title }}
+            <span *ngIf="project.page" class="material-icons">open_in_new</span>
+          </mat-card-title>
+          <mat-card-subtitle>{{ project.description }}</mat-card-subtitle>
+          <img *ngIf="project.image" class="project-img" [src]="project.image" >
+        </mat-card-title-group>
+      </mat-card>
+    </div>
+  </div>
+</ng-container>

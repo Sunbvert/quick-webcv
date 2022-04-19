@@ -13,6 +13,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { BlogComponent } from './blog/blog.component';
 import { CvComponent } from './cv/cv.component';
 import { SkillComponent } from './skill/skill.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SkillComponent } from './skill/skill.component';
     TimelineBlockComponent,
     BlogComponent,
     CvComponent,
-    SkillComponent
+    SkillComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

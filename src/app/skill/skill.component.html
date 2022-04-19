@@ -1,4 +1,4 @@
-<h1>Skills</h1>
+<div class="header" style="margin-top: 50px;">Skills</div>
 <table>
     <thead>
         <tr>
@@ -8,9 +8,9 @@
     </thead>
     <tbody>
         <tr *ngFor="let skill of skills">
-            <td>{{ skill.name }}</td>
+            <th>{{ skill.name }}</th>
             <td *ngFor="let sl of skillLevels; let i = index">
-                <div [style.background-color]="i < skill.level ? 'black' : null"> </div>
+                <div [style.background-color]="i < skill.level ? '#673ab7' : null"> </div>
             </td>
         </tr>
     </tbody>
