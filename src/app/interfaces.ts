@@ -54,7 +54,7 @@ export interface Project {
 export interface CV {
   name: string,
   jobTitle: string,
-  statement: string,
+  statements: [string],
   languages: [Language],
   contactInfos: [ContactInfo],
   skills: [Skill],

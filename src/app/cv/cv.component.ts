@@ -11,7 +11,7 @@ export class CvComponent implements OnInit {
 
   name: string = "Your Name";
   jobTitle: string = "Your Job Title";
-  statement: string = "Statement";
+  statements: Array<string> = [];
   contactInfos: Array<ContactInfo> = [];
   languages: Array<Language> = [];
 
@@ -26,7 +26,7 @@ export class CvComponent implements OnInit {
       .subscribe((data: CV) => {
         this.name = data.name;
         this.jobTitle = data.jobTitle;
-        this.statement = data.statement;
+        this.statements = data.statements;
         this.contactInfos = data.contactInfos;
         this.languages = data.languages;
      });

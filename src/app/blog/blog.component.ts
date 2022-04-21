@@ -12,11 +12,13 @@ export class BlogComponent implements OnInit {
 
   mdSrc: string | undefined;
   errMsg: string | undefined;
+  title: string | undefined;
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     const mdPathFromRoute = String(routeParams.get('mdpath'));
     this.mdSrc = `assets/pages/${mdPathFromRoute}.md`;
+    this.title = mdPathFromRoute;
   }
 
   onError(event: any): void {

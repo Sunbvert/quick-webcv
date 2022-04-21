@@ -14,6 +14,7 @@ import { BlogComponent } from './blog/blog.component';
 import { CvComponent } from './cv/cv.component';
 import { SkillComponent } from './skill/skill.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import {NgxPrintModule} from 'ngx-print';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MaterialModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
+    NgxPrintModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,10 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <mat-icon style="cursor: pointer;" [routerLink]="['']" aria-hidden="false">arrow_back_ios</mat-icon>
+    <h1 style="margin-left: 5px;">{{ title }}</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
 <div class="main-container">
-  <a [routerLink]="['']">
-    go back to cv
-  </a>
   <h1 *ngIf="errMsg">{{ errMsg }}</h1>
   <markdown 
     *ngIf="mdSrc" 
@@ -9,3 +12,11 @@
     (error)="onError($event)">
   </markdown>
 </div>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <mat-icon style="cursor: pointer;" [routerLink]="['']" aria-hidden="false">arrow_back_ios</mat-icon>
+    <h1 style="margin-left: 5px;">{{ title }}</h1>
+    <span class="spacer"></span>
+    <h1>Sun Chuan ©</h1>
+  </mat-toolbar-row>
+</mat-toolbar>

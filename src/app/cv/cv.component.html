@@ -1,11 +1,19 @@
 <div class="row">
-  <div class="col-4" style="background-color: #673ab7; height: 60px;">
+  <div class="col-sm-12 col-md-6 col-lg-4" style="background-color: #673ab7; height: 60px;">
   </div>
   <div class="col" style="background-color: #320b86; height: 60px;">
+    <button  
+      style="background-color: #673ab7;"
+      class="float-end mat-button"
+      printTitle="cvprint"  
+      printSectionId="cvprint"  
+      [useExistingCss]="true"
+      ngxPrint>print</button>
+      <button mat-button>Basic</button>
   </div>
 </div>
 <div class="row">
-  <div class="col-4" style="padding: 50px;">
+  <div class="col-sm-12 col-md-6 col-lg-4" style="padding: 50px;">
     <div>
       <img src="assets\images\profilepic.png" alt="profile picture" class="img-fluid rounded" width="200">
       <h1 class="name">{{ name }}</h1>
@@ -19,7 +27,7 @@
       </li>
     </ul>
     <div class="mt header">About me</div>
-    <p>{{ statement }}</p>
+    <p *ngFor="let statement of statements">{{ statement }}</p>
     <div class="mt header">Language</div>
     <ul>
       <li *ngFor="let lang of languages">

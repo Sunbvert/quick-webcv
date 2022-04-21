@@ -10,7 +10,7 @@
         <tr *ngFor="let skill of skills">
             <th>{{ skill.name }}</th>
             <td *ngFor="let sl of skillLevels; let i = index">
-                <div [style.background-color]="i < skill.level ? '#673ab7' : null"> </div>
+                <div [style.background-color]="i < skill.level ? '#9a67ea' : null"> </div>
             </td>
         </tr>
     </tbody>

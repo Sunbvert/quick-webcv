@@ -1,25 +1,70 @@
 {
     "name": "Sun Chuan",
     "jobTitle": "Graduate Student",
-    "statement": "I have always believed that nothing is impossible. I have a strong learning ability, even if I encounter unknown problems or enter unknown areas. I can quickly build up my understanding of a new technology and make use of my knowledge flexibly. I love and enjoy the process of learning, creating, and problem-solving because once a problem is solved, its a huge motivation for me.",
+    "statements": [
+        "I have always believed that nothing is impossible. I have a strong learning ability, even if I encounter unknown problems or enter unknown areas. I can quickly build up my understanding of a new technology and make use of my knowledge flexibly. I love and enjoy the process of learning, creating, and problem-solving because once a problem is solved, its a huge motivation for me.",
+        "I have 5 years of active programming experience. I can do any basic programming jobs and I'm looking for a job that pays well."
+    ],
     "contactInfos": [
         {
             "method": "Email",
             "value": "sunchuanop@outlook.com",
             "link": "mailto:sunchuanop@outlook.com"
+        },
+        {
+            "method": "Tel(HU)",
+            "value": "+36 301364332",
+            "link": "tel:+36301364332"
+        },
+        {
+            "method": "Tel(CN)",
+            "value": "+86 13234110132",
+            "link": "tel:+8613234110132"
+        },
+        {
+            "method": "WeChat",
+            "value": "Sunvbert"
+        },
+        {
+            "method": "Website",
+            "value": ""
         }
     ],
     "skillLevels": ["Being Developed", "Basic", "Intermediate", "Advanced", "Expert"],
     "skills": [
         {
+            "name": "Full Stack Development",
+            "level": "4"
+        },
+        {
             "name": "Buisness Inteligence",
-            "level": 1
+            "level": 4
+        },
+        {
+            "name": "Software & System Verfication",
+            "level": 3
+        },
+        {
+            "name": "Mobile Development",
+            "level": 3
+        },
+        {
+            "name": "Game Developemnt",
+            "level": 3
+        },
+        {
+            "name": "Machine Learning",
+            "level": 2
         }
     ],
     "languages": [
         {
+            "name": "Chinese",
+            "level": "Native"
+        },
+        {
             "name": "English",
-            "level": "IELTS band 7"
+            "level": "A3 (IELTS Indicator 7)"
         }
     ],
     "timeline": {
@@ -27,8 +72,7 @@
             { "name": "Education", "color": "#673ab7", "enable": true },
             { "name": "Work", "color": "#673ab7", "enable": true },
             { "name": "Project", "color": "#673ab7", "enable": false },
-            { "name": "Personal", "color": "#673ab7", "enable": false },
-            { "name": "Experience", "color": "#673ab7", "enable": true }
+            { "name": "Personal", "color": "#673ab7", "enable": false }
         ],
         "stages": [
             {
@@ -38,16 +82,16 @@
                     {
                         "title": "Born in Baotou China",
                         "type": "Personal",
-                        "detail": "Lived in a small [beatiful villege] for seven years.",
-                        "page": "haha"
+                        "detail": "Lived in a small beatiful villege for seven years."
                     }
                 ]
             },
             {
                 "date": "2004 – 2015",
+                "location": "Baotou, China",
                 "events": [
                     {
-                        "title": "Moved to the City [Baotou] for better education",
+                        "title": "Middle/High School Education",
                         "type": "Personal",
                         "detail": "I was almost always at top 5 of my class. Played a lot of video games."
                     }
@@ -55,47 +99,12 @@
             },
             {
                 "date": "2015 – 2020",
+                "location": "Dalian, China",
                 "events": [
                     {
-                        "title": "Education at [University of Dalian Jiaotong University] in China",
+                        "title": "University of Dalian Jiaotong University",
                         "type": "Education",
-                        "detail": "Because of my strong interest in Programming and English language, I Majored in Software Engineering and English"
-                    },
-                    {
-                        "title": "Learned C# by myself and made a small game with MonoGame & C#",
-                        "type": "Project",
-                        "detail": ""
-                    },
-                    {
-                        "title": "Developed a Java Application for managing books. [JDBC] and Derby, Java GUI",
-                        "type": "Project",
-                        "detail": ""
-                    },
-                    {
-                        "title": "Developed an [Android Application] for Visualizing World human age expectancy.",
-                        "type": "Project",
-                        "detail": ""
-                    },
-                    {
-                        "title": "Studied and Developed a Music management website using Vue.js and express.js without any pier Web development knowledge in one week.",
-                        "type": "Project",
-                        "detail": ""
-                    },
-                    {
-                        "title": "Developed a small software for recommending cars using Python and data provided by some company.",
-                        "type": "Project",
-                        "detail": ""
-                    },
-                    {
-                        "title": "Developed a mobile game using JavaScript language and Cocos2D game engine.",
-                        "type": "Project",
-                        "detail": ""
-                    },
-                    {
-                        "title": "For the bachelor thesis, I did a C++ and python",
-                        "type": "Project",
-                        "detail": "",
-                        "page": "bachelorthesis"
+                        "detail": "Majored in Software Engineering and English"
                     }
                 ]
             },
@@ -141,26 +150,64 @@
         "enable": true,
         "projects": [
             {
-                "title": "Morning App",
-                "description": "1111111111",
-                "image": "assets/images/project/mini/flutter.jpg",
-                "page": "morningapp"
+                "title": "Solo2D",
+                "description": "Windows game",
+                "image": "assets/images/project/mini/solo2d.png",
+                "page": "solo2d"
             },
             {
-                "title": "Morning App",
+                "title": "NoKeyboard",
+                "description": "Guesture controlled Android input method",
+                "image": "assets/images/project/mini/nokeyboard.png",
+                "page": "NoKeyboard"
+            },
+            {
+                "title": "Life expectancy visualization",
+                "description": "Android data visualization",
+                "image": "assets/images/project/mini/lifee.png",
+                "page": "life-expectancy"
+            },
+            {
+                "title": "Car Recommendation",
+                "description": "ML Recommendation",
+                "image": "assets/images/project/mini/car.png",
+                "page": "car-recommendation"
+            },
+            {
+                "title": "YinYang Music Game",
+                "description": "Mobile Game",
+                "image": "assets/images/project/mini/yinyang.png",
+                "page": "yinyang-music-game"
+            },
+            {
+                "title": "Bachelor Thesis",
+                "description": "Deep Reinforcement Learning",
+                "image": "assets/images/project/mini/yinyang.png",
+                "page": "yinyang-music-game"
+            },
+            {
+                "title": "My Books",
+                "description": "Java Application"
+            },
+            {
+                "title": "My Musics",
+                "description": "Website"
+            },
+            {
+                "title": "Inventory & Delivery Management System",
                 "description": ""
             },
             {
-                "title": "Morning App",
+                "title": "Automated Order Crawler System",
                 "description": ""
             },
             {
-                "title": "Morning App",
-                "description": ""
+                "title": "News Reader",
+                "description": "Airtificial News Reader"
             },
             {
                 "title": "Morning App",
-                "description": ""
+                "description": "Cross-Platfome Mobile application with speech technology"
             }
         ]
     }
