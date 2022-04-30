@@ -1,0 +1,235 @@
+{
+    "name": "Sun Chuan",
+    "jobTitle": "Graduate Student",
+    "statements": [
+        "I have always believed that nothing is impossible. I have a strong learning ability, even if I encounter unknown problems or enter unknown areas. I can quickly build up my understanding of a new technology and make use of my knowledge flexibly. I love and enjoy the process of learning, creating, and problem-solving. Solving problems have always been the motivation for me to learn programming.",
+        "I have 5 years of active programming experience. I can do any basic programming jobs and I can solve problems. I'm looking for a job that pays well."
+    ],
+    "contactInfos": [
+        {
+            "method": "Email",
+            "value": "sunchuanop@outlook.com",
+            "link": "mailto:sunchuanop@outlook.com"
+        },
+        {
+            "method": "Tel(HU)",
+            "value": "+36 301364332",
+            "link": "tel:+36301364332"
+        },
+        {
+            "method": "Tel(CN)",
+            "value": "+86 13234110132",
+            "link": "tel:+8613234110132"
+        },
+        {
+            "method": "WeChat",
+            "value": "Sunvbert"
+        },
+        {
+            "method": "GitHub",
+            "value": "github/Sunbvert",
+            "link": "https://github.com/Sunbvert"
+        },
+        {
+            "method": "Website",
+            "value": ""
+        }
+    ],
+    "skillLevels": ["Being Developed", "Basic", "Intermediate", "Advanced", "Expert"],
+    "skills": [
+        {
+            "name": "Full Stack Development",
+            "level": "4"
+        },
+        {
+            "name": "Buisness Inteligence",
+            "level": 4,
+            "page": "bi"
+        },
+        {
+            "name": "Software & System Verfication",
+            "level": 3,
+            "page": "swsv"
+        },
+        {
+            "name": "Game Developemnt",
+            "level": 3
+        },
+        {
+            "name": "Mobile Development",
+            "level": 2
+        },
+        {
+            "name": "DevOps",
+            "level": 2
+        },
+        {
+            "name": "Machine Learning",
+            "level": 1
+        }
+    ],
+    "languages": [
+        {
+            "name": "Chinese",
+            "level": "Native"
+        },
+        {
+            "name": "English",
+            "level": "A3 (IELTS Indicator 7)"
+        }
+    ],
+    "timeline": {
+        "eventTypes": [
+            { "name": "Education", "color": "#673ab7", "enable": true },
+            { "name": "Freelance", "color": "#673ab7", "enable": true },
+            { "name": "Personal", "color": "#5D576B", "enable": false }
+        ],
+        "stages": [
+            {
+                "date": "1996",
+                "location": "Baotou, China",
+                "events": [
+                    {
+                        "title": "Born in Baotou China",
+                        "type": "Personal",
+                        "detail": "Lived in a small beatiful villege for seven years."
+                    }
+                ]
+            },
+            {
+                "date": "2004 – 2015",
+                "location": "Baotou, China",
+                "events": [
+                    {
+                        "title": "Middle/High School Education",
+                        "type": "Personal"
+                    }
+                ]
+            },
+            {
+                "date": "2015 – 2020",
+                "location": "Dalian, China",
+                "events": [
+                    {
+                        "title": "University of Dalian Jiaotong University",
+                        "type": "Education",
+                        "detail": "Bachelor Student [|] Majored in Software Engineering and English"
+                    }
+                ]
+            },
+            {
+                "date": "2020 – 2022",
+                "location": "Budapest, Hungary",
+                "events": [
+                    {
+                        "title": "Master at Budapest University of Technology and Economics",
+                        "type": "Education",
+                        "detail": "Graduate Student [|] Majored in Computer Science and Smart City"
+                    },
+                    {
+                        "title": "Developed an Inventory and Delivery System for Baotou Xinweilai Ltd.",
+                        "type": "Freelance",
+                        "detail": "Studing while doing the project, took about 9 monthes.",
+                        "page": "idms"
+                    },
+                    {
+                        "title": "Developed an order management system for Dongjieqianchang Logistics Ltd.",
+                        "type": "Freelance",
+                        "detail": "One month job.",
+                        "page": "aocs"
+                    }
+                ]
+            }
+        ]
+    },
+    "portfolio": {
+        "name": "Portfolio",
+        "enable": true,
+        "projects": [
+            {
+                "title": "Solo2D",
+                "description": "2D Windows game",
+                "image": "assets/images/mini/solo2d.png",
+                "page": "solo2d"
+            },
+            {
+                "title": "NoKeyboard",
+                "description": "Guesture controlled Android input method",
+                "image": "assets/images/mini/nokeyboard.png",
+                "page": "no-keyboard"
+            },
+            {
+                "title": "Life expectancy visualization",
+                "description": "Android data visualization",
+                "image": "assets/images/mini/lifee.png",
+                "page": "life-expectancy"
+            },
+            {
+                "title": "Car Buying Recommender",
+                "description": "ML Recommendation",
+                "image": "assets/images/mini/car.png",
+                "page": "car-recommendation"
+            },
+            {
+                "title": "YinYang Music Game",
+                "description": "Mobile Game",
+                "image": "assets/images/mini/yinyang.png",
+                "page": "yinyang-music-game"
+            },
+            {
+                "title": "Bachelor Thesis",
+                "description": "Deep Reinforcement Learning",
+                "image": "assets/images/mini/bachelorthesis.png",
+                "page": "bachelorthesis"
+            },
+            {
+                "title": "My Books",
+                "description": "Java Application",
+                "image": "assets/images/mini/book.png",
+                "page": "mybooks"
+            },
+            {
+                "title": "My Musics",
+                "description": "Vue.js Website",
+                "image": "assets/images/mini/mymusics.png",
+                "page": "mymusics"
+            },
+            {
+                "title": "Inventory & Delivery Management System",
+                "description": "Web application/Full Stack",
+                "image": "assets/images/mini/idms.png",
+                "page": "idms"
+            },
+            {
+                "title": "Automated Order Crawler System",
+                "description": "Node.js web serivce",
+                "image": "assets/images/mini/aocs.png",
+                "page": "aocs"
+            },
+            {
+                "title": "News Reader",
+                "description": "Text to Speech",
+                "image": "assets/images/mini/newsreader.png",
+                "page": "news-reader"
+            },
+            {
+                "title": "Morning App",
+                "description": "Android/IOS application with speech technology",
+                "image": "assets/images/mini/morningapp.png",
+                "page": "morning-app"
+            },
+            {
+                "title":"Business Intellegence",
+                "page": "bi"
+            },
+            {
+                "title": "Software & System Verfication",
+                "page": "swsv"
+            },
+            {
+                "title": "Smart City",
+                "page": "smartcity"
+            }
+        ]
+    }
+}
