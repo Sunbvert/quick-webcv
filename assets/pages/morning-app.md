@@ -1,5 +1,5 @@
 # The App to Set Your Morning Tune
-__Project Created: October 2020__  
+__Project Created: December 2021__  
 Status: Discontinued, Unpublished
 
 ## Tools
@@ -31,16 +31,8 @@ In order to follow the guideline of the homework. We did
 ## The Application
 It's my first time doing flutter and we only have two weeks. In the final implementation, many features are discard with our main focus on speech technology. The technical detail are listed below:
 - Frontend: made with Flutter, cross-platform, the app is running on both IOS and Android.
-- Backend: made with Express.js, the backend invokes many API services. The weather API from(https://openweathermap.org/current), News API from
-(https://mediastack.com/documentation), Quote API
-from(https://github.com/lukePeavey/quotable#get-random-quote).
-- Speech Recognition/ Synthesis: Using Microsoft Azure cognitive services. Using
-action maps to determine what the user wants to do.
-
-Though in our prototype we have designed many additional features like Closet and
-Calendar, we don’t have the time to implement them all. Our main focus is the speech
-functionality which works amazingly well with the help of Microsoft Azure cognitive
-services.
+- Backend: made with Express.js, the backend invokes many API services. The weather API from(https://openweathermap.org/current), News API from (https://mediastack.com/documentation), Quote API from(https://github.com/lukePeavey/quotable#get-random-quote).
+- Speech Recognition/ Synthesis: Using Microsoft Azure cognitive services. Using action maps to determine what the user wants to do.
 
 ### The final application of our morning App implemented 4 features:
 - Time Clock (displays current date and time at current time zone )

@@ -1,6 +1,6 @@
 # Retrival of Orders from Baotou's Supermarkets/Malls
 __Project Created: October 2020__  
-Created for: Business
+Created for: Business  
 Status: Operating/Online
 
 ## Tools
