@@ -9,12 +9,13 @@
       <div class="label-main">
         <label class="label" [ngStyle]="{ 'background-color': eventColorPalette[event.type] }">{{ event.type }}</label>
       </div>
-      <p *ngIf="event.detail" [innerHTML]="sanitizer.bypassSecurityTrustHtml(event.detail)"></p>
       <a *ngIf="event.page"
         title="detail"
-        [routerLink]="['', event.page]">
-        {{ event.page }}
+        [routerLink]="['', event.page]"
+        style="position: relative;">
+        <span class="material-icons">open_in_new</span>
       </a>
+      <p *ngIf="event.detail" [innerHTML]="sanitizer.bypassSecurityTrustHtml(event.detail)"></p>
     </div>
   </div>
 </div>

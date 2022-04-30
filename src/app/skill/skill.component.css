@@ -11,3 +11,8 @@ table td > div{
 thead td {
     text-align: center;
 }
+
+.material-icons {
+    font-size: 12px;
+    color: black;
+}

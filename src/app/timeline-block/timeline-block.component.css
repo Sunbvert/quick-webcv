@@ -51,3 +51,9 @@ th {
 .label-primary {
   background-color: #0073aa;
 }
+
+.material-icons {
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+}

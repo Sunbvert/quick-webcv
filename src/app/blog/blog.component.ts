@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CV } from '../interfaces';
+import { TimelineService } from '../timeline.service';
 
 @Component({
   selector: 'app-blog',
@@ -8,7 +10,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BlogComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute, 
+    private timelineService: TimelineService
+  ) { }
 
   mdSrc: string | undefined;
   errMsg: string | undefined;
@@ -18,7 +23,7 @@ export class BlogComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const mdPathFromRoute = String(routeParams.get('mdpath'));
     this.mdSrc = `assets/pages/${mdPathFromRoute}.md`;
-    this.title = mdPathFromRoute;
+    this.getProjectInfo(mdPathFromRoute);
   }
 
   onError(event: any): void {
@@ -27,4 +32,12 @@ export class BlogComponent implements OnInit {
       ERROR: ${event.message}`;
   }
 
+  getProjectInfo(page: string) {
+    this.timelineService.getCV()
+      .subscribe((data: CV) => {
+        let projects = data.portfolio.projects;
+        let project = projects.find(ele => ele.page === page)
+        this.title = project?.title;
+     });
+  }
 }

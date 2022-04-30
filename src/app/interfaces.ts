@@ -1,6 +1,7 @@
 export interface Skill {
   name: string,
-  level: number
+  level: number,
+  page?: string
 }
 
 export interface ContactInfo {

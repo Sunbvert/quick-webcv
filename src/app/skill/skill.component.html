@@ -8,7 +8,15 @@
     </thead>
     <tbody>
         <tr *ngFor="let skill of skills">
-            <th>{{ skill.name }}</th>
+            <th *ngIf="skill.page; else nopage">
+                <a [href]="skill.page" style="color: #212529; text-decoration: none;">
+                    {{ skill.name }}
+                    <span class="material-icons">open_in_new</span>
+                </a>
+            </th>
+            <ng-template #nopage>
+                <th>{{ skill.name }}</th>
+            </ng-template>
             <td *ngFor="let sl of skillLevels; let i = index">
                 <div [style.background-color]="i < skill.level ? '#9a67ea' : null"> </div>
             </td>

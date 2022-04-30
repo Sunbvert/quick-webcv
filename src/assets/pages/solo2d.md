@@ -6,7 +6,7 @@ Status: Unfinished, Never puhlished
 + [MonoGame Engine](https://www.monogame.net/)
 + C# Programming Language
 
-C# is the first programming language I learned and I used it to write games. This project is my first ever project. The game is simple but I did everything by myself.
+C# is the first programming language I learned and I used it to write games. This project is my first ever project. The game is simple but I learned a lot.
 
 <img src="assets/images/project/solo2d/game.gif" alt="game in action" width="700"/>
 
