@@ -1,5 +1,5 @@
 {
-    "name": "Sun Chuan",
+    "name": "Chuan Sun",
     "jobTitle": "Graduate Student",
     "statements": [
         "I have always believed that nothing is impossible. I have strong learning ability, even if I encounter unknown problems or enter unknown areas. I can quickly build up my understanding of new technology and make use of my knowledge flexibly. I love and enjoy the process of learning, creating, and problem-solving. Solving problems has always been the motivation for me to learn to program.",
@@ -22,10 +22,6 @@
             "link": "tel:+8613234110132"
         },
         {
-            "method": "WeChat",
-            "value": "Sunvbert"
-        },
-        {
             "method": "GitHub",
             "value": "github/Sunbvert",
             "link": "https://github.com/Sunbvert"
@@ -43,7 +39,7 @@
             "level": "4"
         },
         {
-            "name": "Buisness Inteligence",
+            "name": "Business Intelligence",
             "level": 4,
             "page": "bi"
         },
@@ -119,6 +115,23 @@
                 ]
             },
             {
+                "date": "2020",
+                "location": "Baotou, China",
+                "events": [
+                    {
+                        "title": "Developed an inventory and delivery system for Baotou Xinweilai Ltd.",
+                        "type": "Freelance",
+                        "detail": "Studying while doing the project, took about 9 months.",
+                        "page": "idms"
+                    },
+                    {
+                        "title": "Developed an order management system for Dongjieqianchang Logistics Ltd.",
+                        "type": "Freelance",
+                        "page": "aocs"
+                    }
+                ]
+            },
+            {
                 "date": "2020 – 2022",
                 "location": "Budapest, Hungary",
                 "events": [
@@ -126,17 +139,6 @@
                         "title": "Budapest University of Technology and Economics",
                         "type": "Education",
                         "detail": "Graduate Student [|] Majored in Computer Science and Smart City"
-                    },
-                    {
-                        "title": "Developed an inventory and delivery system for Baotou Xinweilai Ltd.",
-                        "type": "Freelance",
-                        "detail": "Studing while doing the project, took about 9 monthes.",
-                        "page": "idms"
-                    },
-                    {
-                        "title": "Developed an order management system for Dongjieqianchang Logistics Ltd.",
-                        "type": "Freelance",
-                        "page": "aocs"
                     }
                 ]
             }
@@ -169,12 +171,6 @@
                 "description": "Android data visualization",
                 "image": "assets/images/mini/lifee.png",
                 "page": "life-expectancy"
-            },
-            {
-                "title": "Car Buying Recommender",
-                "description": "ML Recommendation",
-                "image": "assets/images/mini/car.png",
-                "page": "car-recommendation"
             },
             {
                 "title": "YinYang Music Game",
@@ -219,16 +215,12 @@
                 "page": "morning-app"
             },
             {
-                "title":"Business Intellegence",
+                "title":"Business Intelligence",
                 "page": "bi"
             },
             {
                 "title": "Software & System Verfication",
                 "page": "swsv"
-            },
-            {
-                "title": "Smart City",
-                "page": "smartcity"
             }
         ]
     }

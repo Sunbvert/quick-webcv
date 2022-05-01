@@ -1,13 +1,13 @@
 # Vue.js Websites
 __Project Created: June 2019__  
-Created for: Homework
+Created for: Homework  
 Status: Finished
 
 ## Tools
 + Vue.js
 
 ## Project Description
-A website to store your favorite songs. It's my first time writing frontend. I learned Vue.js and made this website in 5 days. There's no backend, simply a JSON file server.
+A website to store your favorite songs. It was my first time writing frontend. I learned Vue.js and made this website in 5 days. There's no backend, simply a JSON file server.
 
 <img src="assets/images/project/mymusics/main.jpg" width="700"/>
 
