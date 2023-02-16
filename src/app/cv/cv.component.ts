@@ -14,6 +14,7 @@ export class CvComponent implements OnInit {
   statements: Array<string> = [];
   contactInfos: Array<ContactInfo> = [];
   languages: Array<Language> = [];
+  workExperience: Array<string> = [];
 
   constructor(private timelineService: TimelineService) { }
 
@@ -29,6 +30,7 @@ export class CvComponent implements OnInit {
         this.statements = data.statements;
         this.contactInfos = data.contactInfos;
         this.languages = data.languages;
+        this.workExperience = data.workExperience;
      });
   }
 }

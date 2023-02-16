@@ -56,6 +56,7 @@ export interface CV {
   name: string,
   jobTitle: string,
   statements: [string],
+  workExperience: [string],
   languages: [Language],
   contactInfos: [ContactInfo],
   skills: [Skill],

@@ -28,6 +28,8 @@
     </ul>
     <div class="mt header">About me</div>
     <p *ngFor="let statement of statements">{{ statement }}</p>
+    <div class="mt header">Job at EF</div>
+    <p *ngFor="let experience of workExperience">{{ experience }}</p>
     <div class="mt header">Language</div>
     <ul>
       <li *ngFor="let lang of languages">
