@@ -5,6 +5,9 @@
         "I have always believed that nothing is impossible. I have strong learning ability, even if I encounter unknown problems or enter unknown areas. I can quickly build up my understanding of new technology and make use of my knowledge flexibly. I love and enjoy the process of learning, creating, and problem-solving. Solving problems has always been the motivation for me to learn to program.",
         "I have 5 years of active programming experience. I can do any basic programming jobs and I can solve problems. I'd like to work in a creative environment and solve challenging problems."
     ],
+    "workExperience": [
+        "Being one of the first employees at EF tech team Hungary. I was honored to work with such a diverse team in a startup environment. I've taken both the simplest and most complicated tasks. From fixing frontend text, desktop support to fixing root causes that's in the legacy system for years. I've worked on Monorepo, Salesforce, .Net, databases, and Google analytics and made considerable contributions to each and every project for the new team."
+    ],
     "contactInfos": [
         {
             "method": "Email",
@@ -79,7 +82,8 @@
         "eventTypes": [
             { "name": "Education", "color": "#673ab7", "enable": true },
             { "name": "Freelance", "color": "#673ab7", "enable": true },
-            { "name": "Personal", "color": "#5D576B", "enable": false }
+            { "name": "Personal", "color": "#5D576B", "enable": false },
+            { "name": "Work Experience", "color": "#673ab7", "enable": true}
         ],
         "stages": [
             {
@@ -139,6 +143,17 @@
                         "title": "Budapest University of Technology and Economics",
                         "type": "Education",
                         "detail": "Graduate Student [|] Majored in Computer Science and Smart City"
+                    }
+                ]
+            },
+            {
+                "date": "2022-07 - now",
+                "location": "Budapest, Hungary",
+                "events": [
+                    {
+                        "title": "Education First",
+                        "type": "Work Experience",
+                        "detail": "Junior Software Developer"
                     }
                 ]
             }
