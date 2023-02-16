@@ -18,6 +18,7 @@ export class BlogComponent implements OnInit {
   mdSrc: string | undefined;
   errMsg: string | undefined;
   title: string | undefined;
+  name: string | undefined;
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
@@ -38,6 +39,7 @@ export class BlogComponent implements OnInit {
         let projects = data.portfolio.projects;
         let project = projects.find(ele => ele.page === page)
         this.title = project?.title;
+        this.name = data.name;
      });
   }
 }
